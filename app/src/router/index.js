@@ -17,8 +17,8 @@ const router = new Router({
       }
     },
     {
-      path: '/addmenu',
-      name: 'addmenu',
+      path: '/menu',
+      name: 'menu',
       component: function (resolve) {
         require(['../views/addEditMenu.vue'], resolve)
       }
