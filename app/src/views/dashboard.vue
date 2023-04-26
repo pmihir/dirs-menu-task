@@ -35,105 +35,15 @@ export default {
   },
   data() {
     return {
-      // dishList: [{
-      //   id: '101',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '102',
-      //   name: 'Veggie Sandwich',
-      //   price: '20',
-      //   description: 'English muffin filled with spinach, tomato, and Swiss cheese.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '103',
-      //   name: 'Yogurt Parfait',
-      //   price: '20',
-      //   description: ' Layers of Greek yogurt, fresh berries, and granola',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '104',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '105',
-      //   name: 'Veggie Sandwich',
-      //   price: '20',
-      //   description: 'English muffin filled with spinach, tomato, and Swiss cheese.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '106',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '107',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '186',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '109',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },
-      // {
-      //   id: '110',
-      //   name: 'Avocado Toast',
-      //   price: '20',
-      //   description: 'Toasted bread with mashed avocado and a sprinkle of sea salt.',
-      //   category: "Main-Course",
-      //   waitTime: '15 Min',
-      //   selectedAvailableTime: ["BreakFast", "Dinner", "Lunch"]
-      // },]
       dishList: []
     }
   },
   methods: {
     onAddMenuClick() {
-      router.push({ name: 'addmenu' })
+      router.push({ name: 'menu' })
     },
     onEdit(data) {
-      router.push({ name: 'addmenu', params: { ...data, isEdit: true } })
+      router.push({ name: 'menu', params: { ...data, isEdit: true } })
     },
     onDelete(id) {
       Api.deleteDish(id).then(() => {
